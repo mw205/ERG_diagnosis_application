@@ -13,16 +13,20 @@ class HomePageController extends GetxController {
     "assets/Images/biomedical.jpg",
   ];
   List<String> type = ["Scotopic", "Photopic", "Maximum"];
+
   RxString selectedType = "".obs;
   TextEditingController ageController = TextEditingController();
   TextEditingController aWaveController = TextEditingController();
   TextEditingController bWaveController = TextEditingController();
   TextEditingController aWaveLatencyController = TextEditingController();
   TextEditingController bWaveLatencyController = TextEditingController();
+
   RxString result = "".obs;
+
   void makePrediction() async {
     DecisionTreeClassifier classifier = DecisionTreeClassifier.fromMap(
-        await readJsonFile("assets/models/finalmodel.json"));
+      await readJsonFile("assets/models/finalmodel.json"),
+    );
     List<double> x = [];
     if (selectedType.value == type[0]) {
       x.add(0);

@@ -13,61 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // List<String> type = ["Scotopic", "Photopic", "Maximum"];
-  // String? selectedType = "";
-  // TextEditingController ageController = TextEditingController();
-  // TextEditingController aWaveController = TextEditingController();
-  // TextEditingController bWaveController = TextEditingController();
-  // TextEditingController aWaveLatencyController = TextEditingController();
-  // TextEditingController bWaveLatencyController = TextEditingController();
-  // String? result = "";
-  // void makePrediction() async {
-  //   DecisionTreeClassifier classifier = DecisionTreeClassifier.fromMap(
-  //       await readJsonFile("assets/models/finalmodel.json"));
-  //   List<double> x = [];
-  //   if (selectedType == type[0]) {
-  //     x.add(0);
-  //   } else if (selectedType == type[0]) {
-  //     x.add(1);
-  //   } else {
-  //     x.add(2);
-  //   }
-  //   if (ageController.text != "" ||
-  //       selectedType == "" ||
-  //       aWaveController.text != "" ||
-  //       bWaveController.text != "" ||
-  //       aWaveLatencyController.text != "" ||
-  //       bWaveLatencyController.text != "") {
-  //     x.add(double.parse(ageController.text));
-  //     x.add(double.parse(aWaveController.text));
-  //     x.add(double.parse(bWaveController.text));
-  //     x.add(double.parse(aWaveLatencyController.text));
-  //     x.add(double.parse(bWaveLatencyController.text));
-  //     int prediction = (classifier.predict(x));
-
-  //     Map<String, dynamic> classes =
-  //         await readJsonFile("assets/models/classes.json");
-  //     result = classes[prediction.toString()];
-  //     setState(() {});
-  //   }
-  // }
-
-  // String readFile(String path) {
-  //   return File(path).readAsStringSync();
-  // }
-
-  // Future<Map<String, dynamic>> readJsonFile(String path) async {
-  //   return json.decode(
-  //     await rootBundle.loadString(path, cache: false),
-  //   );
-  // }
-
-  // changeTypeValue(String? value) {
-  //   selectedType = value!;
-  //   result = "";
-  //   setState(() {});
-  // }
-
   @override
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
