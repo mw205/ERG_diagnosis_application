@@ -1,16 +1,4 @@
 # erg_diagnosis
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<center><img src="logo.png"></center>
+It is an application for erg_diagnosis with decision tree model with sikitlearn integrated with the application without backend servers with sklite package from pub dev that is used to convert the onnx file to json file
+and this file is decoded in the application so I can deal with it .
